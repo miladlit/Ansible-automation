@@ -3,13 +3,13 @@
 Målet med labben var att sätta upp en enkel Ansible miljö med en kontrollnod och två managed nodes, konfigurera namnuppslagning med mDNS, skapa password less SSH och verifiera att Ansible kan nå båda noderna.
 
 
-Jag skapade tre Ubuntu Server 24.04-virtuella maskiner i Hyper-V:
+Jag skapade tre Ubuntu Server 24.04.05 virtuella maskiner i Hyper-V:
 
 - `milad-controlnode`
 - `milad-node1`
 - `milad-node2`
 
-Alla tre VM är anslutna till Hyper Vs Default Switch.
+
 
 ## Genomförande
 
@@ -65,7 +65,7 @@ ssh milad@milad-node2.local
 ```
 
 ### 4. Ansible inventory
-En inventory-fil skapades på kontrollnoden:
+En inventory fil skapades på kontrollnoden:
 
 ```ini
 [servers]
